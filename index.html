@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Generator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="container">
+      <h1>Password Generator</h1>
+      <br />
+      <br />
 
-  <!-- CONTAINER -->
-  <div class="container">
-    <h1>Password Generator</h1>
-    <br />
-    <br />
+      <!-- PASSWORD LENGTH -->
+      <div>
+        <label for="length"> Password Length: </label>
+        <input type="number" id="length" value="10" min="8" max="20" />
+      </div>
 
-    <!-- PASSWORD LENGTH -->
-    <div>
-      <label for="length"> Password Length: </label>
-      <input type="number" id="length" value="10" min="8" max="20" />
+      <!-- Add a div, and inside add 1 label for uppercase, and a checkbox  -->
+      <div>
+        <label for="uppercase">Include Uppercase</label>
+        <input type="checkbox" id="uppercase" />
+      </div>
+
+      <!-- Add a div, and inside add 1 label for numbers, and a checkbox  -->
+      <div>
+        <label for="number">Include Numbers</label>
+        <input type="checkbox" id="number" />
+      </div>
+
+      <!-- Add a div, and inside add 1 label for symbols, and a checkbox  -->
+      <div>
+        <label for="symbols">Include Symbols</label>
+        <input type="checkbox" id="symbols" />
+      </div>
+
+      <!-- GENERATE PASSWORD -->
+      <button id="generate">Generate Password</button>
+
+      <!-- PASSWORD LENGTH -->
+      <div>
+        <label for="length"> Password Length: </label>
+        <input type="text" id="password" name="password" readonly />
+      </div>
     </div>
-    <!-- Add a div, and inside add 1 label for uppercase, and a checkbox  -->
 
-    <!-- Add a div, and inside add 1 label for numbers, and a checkbox  -->
-
-    <!-- Add a div, and inside add 1 label for symbols, and a checkbox  -->
-
-    <!-- GENERATE PASSWORD -->
-    <button id="generate">Generate Password</button>
-
-    <!-- PASSWORD LENGTH -->
-    <div>
-      <label for="length"> Password Length: </label>
-      <input type="text" id="password" name="password" readonly />
-    </div>
-  </div>
-
-  <script src="main.js"></script>
-</body>
+    <script src="main3.js"></script>
+  </body>
 </html>
