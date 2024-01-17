@@ -36,6 +36,7 @@ function generatePass() {
 
   if (useUpperCase) {
     charSet += upperChars;
+    charSet += lowerChars;
   }
 
   if (useNumber) {
